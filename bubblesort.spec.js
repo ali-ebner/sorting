@@ -17,9 +17,6 @@ beforeAll(function () {
 
   it('handles an array of multiple elements', function(){
   	expect( bubbleSort( [4, 10, 29, 3, 1, 18]) ).toEqual( [1, 3, 4, 10, 18, 29] );
-  }), it('runs n times', function () {
-  //swap();
-  expect(window.swap.calls.count()).toEqual(8);
 });
 
   it('handles an array with duplicates', function(){

@@ -21,9 +21,10 @@ beforeAll(function () {
 
   it('handles an array with duplicates', function(){
   	expect( bubbleSort( [5, 9, 3, 5]) ).toEqual( [3, 5, 5, 9]);
-  }), it('runs n times', function () {
-  expect(window.swap.calls.count()).toEqual(3);
-});
+  })
+  
+  // it('runs n times', function () {
+  // expect(window.swap.calls.count()).toEqual(3);
 
   it('handles an array with negatives', function(){
   	expect( bubbleSort( [8, 12, -3, 1, 6, -10]) ).toEqual( [-10, -3, 1, 6, 8, 12]);

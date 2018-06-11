@@ -23,5 +23,12 @@ function merge(arr1, arr2) {
 }
 
 function mergeSort(arr) {
-    // here
+    if (arr.length <= 1){
+        return arr;
+    }
+    else {
+        const firstHalf = split(arr)[0];
+        const lastHalf = split(arr)[1];
+        return merge(mergeSort(firstHalf), mergeSort(lastHalf));
+    }
 }
